@@ -103,9 +103,7 @@ For each run, directories are organized as:
    3. 3=无变化，No change
 
 ## Features Description
-
 ### 1. Audio
-
 #### 1.1 `mel_mfcc`
 - Contents:
   - Log-Mel spectrogram: 80 dims
@@ -178,7 +176,7 @@ For each run, directories are organized as:
 
 Supported models and dimensions:
 
-| model_tag | HuggingFace / model identifier | Per-frame dimension D |
+| model_tag | HuggingFace / model identifier | Per-frame dimension  |
 |---|---|---:|
 | `wavlm-base` | `microsoft/wavlm-base` | 768 |
 | `chinese-hubert-base` | `TencentGameMate/chinese-hubert-base` | 768 |
@@ -188,7 +186,6 @@ Supported models and dimensions:
 | `wav2vec2-chinese-xlsr` | `jonatasgrosman/wav2vec2-large-xlsr-53-chinese-zh-cn` | 1024 |
 
 ## 2. Video Features
-
 ### 2.1 `qc_stats`
 
 - Pretrained dependency: indirectly depends on upstream `InsightFace buffalo_l` outputs (`face_meta`)
@@ -348,7 +345,7 @@ Supported models and dimensions:
 
 Supported models and dimensions:
 
-| model_tag | HuggingFace / model identifier | Per-frame dimension D |
+| model_tag | HuggingFace / model identifier | Per-frame dimension |
 |---|---|---:|
 | `dinov2-small` | `facebook/dinov2-small` | 384 |
 | `dinov2-base` | `facebook/dinov2-base` | 768 |
