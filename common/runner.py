@@ -56,6 +56,8 @@ def parse_args() -> argparse.Namespace:
 
     p.add_argument("--audio_features", nargs="+", default=None)
     p.add_argument("--video_features", nargs="+", default=None)
+    p.add_argument("--core_audio", nargs="+", default=None)
+    p.add_argument("--core_video", nargs="+", default=None)
     p.add_argument("--audio_ssl_model_tag", type=str, default=None)
     p.add_argument("--video_ssl_model_tag", type=str, default=None)
 
@@ -97,6 +99,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--preload", type=int, default=None)
     p.add_argument("--patience", type=int, default=None)
     p.add_argument("--grad_clip", type=float, default=None)
+    p.add_argument("--use_pos_weight", type=int, default=None)
     p.add_argument("--run_inference_after_train", type=int, default=None)
 
     return p.parse_args()
